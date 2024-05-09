@@ -18,7 +18,8 @@ h2{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    
+    background-color:rgb(245,255,250);
+    border-radius:50px;
 }
 .item{
     
@@ -27,7 +28,7 @@ h2{
     height:100px;
     position:relative;
     transition: all 0.3s;
-    background:white;
+    /* background:white; */
     
     display: flex;
     flex-direction: column;
@@ -36,15 +37,14 @@ h2{
 }
 /* 星期 */
 .item-header{
-    margin-left:1px;
-    margin-top:1px;
-    display:inline-block;
+    padding-top:10px ;
     width:100px;
     height:40px;
     /* border:1px solid black; */
     text-align: center;
-    background-color: 	#E0E0E0; 
-    color:black;
+    background-color:#F0F0F0; 
+    border-radius:50px;
+    color:white;
 }
 .item:hover{
     background:#F0F0F0;
