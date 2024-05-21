@@ -22,8 +22,8 @@ body{
 }
 
 .box1{
-    width: 800px;
-    border-radius:53vh;
+    width: 810px;
+    height:51vh;
     border-radius:30px;
     background-color:rgb(0,0,0,0.4);
     margin: auto;
@@ -42,7 +42,7 @@ body{
 
 .box2-box{
     width: 260px;
-    height: 450px;
+    height: 460px;
     /* background-color:#708090; */
     border-radius: 30px;
     background:linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(https://picsum.photos/260/450);
@@ -50,40 +50,29 @@ body{
     background-size: cover;
 }
 
-.box3{
-    width: 520px;
-    border-radius:30px;
-    
+.pochacco>img{
+    position: fixed;
+    top: 3%;
+    right: 12%;
+            
 }
 
-.pochacco>img{
-            position: absolute;
-            top: 3%;
-            right: 12%;
-            
-        }
-
-        .pochacco1>img{
-            position: absolute;
-            bottom: 5%;
-            left: 12%;
-        }
+.pochacco1>img{
+    position: fixed;
+    bottom: 5%;
+    left: 12%;
+}
 
 .block-table{
     margin: auto;
-    width: 520px;
+    width: 500px;
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    /* background-color:rgb(248,248,255,0.4); */
     background-color:rgb(255,255,255,0.5);
     border-radius:30px;
     
 }
-
-/* .today {
-            background-color: blue;
-        } */
 
 .item{
     
@@ -92,7 +81,6 @@ body{
     height:70px;
     position:relative;
     transition: all 0.3s;
-    /* background:white; */
     
     display: flex;
     flex-direction: column;
@@ -106,7 +94,6 @@ body{
     padding-top:2px ;
     width:70px;
     height:28px;
-    /* border:1px solid black; */
     text-align: center;
     background-color:rgb(0,0,0); 
     border-radius:30px;
@@ -114,15 +101,12 @@ body{
     box-shadow: 3px 4px 12px 0px #7A7567;
     text-shadow: 0 0 0.2em 	#F8F8FF;
 }
+
 .item:hover{
     background:rgb(0,0,0,0.8);
     border-radius:50%;
     color:white;
     transform: scale(0.9);
-    /* 
-    font-weight:bold;
-    transition: all 1s;
-    z-index:10; */
     box-shadow: rgba(0, 0, 0, 0.5) 10px 5px 15px;
     text-shadow: 0 0 0.2em 	#F8F8FF, 0 0 0.2em 	#F8F8FF;
 }
@@ -133,9 +117,6 @@ body{
 }
 /* 年分 月份 */
 .nav{
-    /* display:inline-block;
-    width:32.5%;
-    margin:5px 0; */
     margin-top: -20px; 
     text-align: center;
     font-size: 27px;
@@ -233,7 +214,7 @@ $currentMonthLink = "calendar.php?year=$currentYear&month=$currentMonth";
 <br>
 <div class="box1">
     <div class="box2"><div class="box2-box"></div></div>
-    <div class="box3">
+
 <?php
 
 echo "<div class='block-table'>";
@@ -265,7 +246,6 @@ echo "<div class='item'></div>";
 echo "</div>";
 
 ?>
-</div>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
